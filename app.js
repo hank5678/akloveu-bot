@@ -80,7 +80,11 @@ const flirtingSchedule2 = schedule.scheduleJob("0 0 14 * * *", function () {
   sendFlirting(chatIds)
 })
 
-const flirtingSchedule3 = schedule.scheduleJob("0 0 21 * * *", function () {
+const flirtingSchedule3 = schedule.scheduleJob("0 0 18 * * *", function () {
+  sendFlirting(chatIds)
+})
+
+const flirtingSchedule4 = schedule.scheduleJob("0 0 21 * * *", function () {
   sendFlirting(chatIds)
 })
 
