@@ -64,15 +64,23 @@ bot.onText(/(.+)/, function (msg, match) {
 //   console.log(msg)
 // })
 
-const morningSchedule = schedule.scheduleJob("0 30 9 * * *", function () {
+const morningSchedule = schedule.scheduleJob({ hour: 9, minute: 30, tz: "Asia/Taipei" }, function () {
   sendMorning(chatIds)
 })
 
-const nightSchedule = schedule.scheduleJob("0 50 23 * * *", function () {
+const lunchSchedule = schedule.scheduleJob({ hour: 11, minute: 50, tz: "Asia/Taipei" }, function () {
+  sendLunch(chatIds)
+})
+
+const dinnerSchedule = schedule.scheduleJob({ hour: 19, minute: 0, tz: "Asia/Taipei" }, function () {
+  sendDinner(chatIds)
+})
+
+const nightSchedule = schedule.scheduleJob({ hour: 23, minute: 50, tz: "Asia/Taipei" }, function () {
   sendNight(chatIds)
 })
 
-const flirtingSchedule1 = schedule.scheduleJob("0 0 11 * * *", function () {
+const flirtingSchedule1 = schedule.scheduleJob({ hour: 11, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
@@ -80,16 +88,29 @@ const flirtingSchedule2 = schedule.scheduleJob({ hour: 14, minute: 0, tz: "Asia/
   sendFlirting(chatIds)
 })
 
-// const flirtingSchedule3 = schedule.scheduleJob("0 0 18 * * *", function () {
-//   sendFlirting(chatIds)
-// })
-const flirtingSchedule3 = schedule.scheduleJob({ hour: 18, minute: 5, tz: "Asia/Taipei" }, function () {
+const flirtingSchedule3 = schedule.scheduleJob({ hour: 18, minute: 30, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
-const flirtingSchedule4 = schedule.scheduleJob("0 0 21 * * *", function () {
+const flirtingSchedule4 = schedule.scheduleJob({ hour: 22, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
+
+const sendLunch = (chatIds) => {
+  chatIds.forEach((chatId) => {
+    a.forEach((el, id) => {
+      bot.sendMessage(chatId, "寶貝~ 中午該吃飯囉~ 要吃飽飽唷")
+    })
+  })
+}
+
+const sendDinner = (chatIds) => {
+  chatIds.forEach((chatId) => {
+    a.forEach((el, id) => {
+      bot.sendMessage(chatId, "寶貝~ 晚餐時間囉~ 好好吃飯，我想你")
+    })
+  })
+}
 
 const sendMorning = (chatIds) => {
   const a = morning[Math.floor(Math.random() * morning.length)]
