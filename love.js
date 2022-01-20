@@ -82,6 +82,16 @@ module.exports = [
   [
     {
       type: "text",
+      payload: "抱抱，我很想你，你也要想我哦"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
       payload: "寶貝，抱完乖乖哦~"
     },
     {

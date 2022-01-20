@@ -48,6 +48,22 @@ module.exports = [
   [
     {
       type: "text",
+      payload: "不跟你晚安，你找主人去~"
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "晚安，我很想你，你也要想我，好嗎？"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["晚安"])
+    }
+  ],
+  [
+    {
+      type: "text",
       payload: "親親~ 抱抱~ 寶貝，乖乖睡，想你哦，晚安"
     },
     {

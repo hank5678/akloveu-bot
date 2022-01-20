@@ -107,7 +107,7 @@ const sendLunch = (chatIds) => {
 const sendDinner = (chatIds) => {
   chatIds.forEach((chatId) => {
     a.forEach((el, id) => {
-      bot.sendMessage(chatId, "寶貝~ 晚餐時間囉~ 好好吃飯，我想你")
+      bot.sendMessage(chatId, "晚餐時間囉，好好吃飯，我想你，要好好的喔")
     })
   })
 }
