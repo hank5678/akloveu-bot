@@ -76,11 +76,14 @@ const flirtingSchedule1 = schedule.scheduleJob("0 0 11 * * *", function () {
   sendFlirting(chatIds)
 })
 
-const flirtingSchedule2 = schedule.scheduleJob("0 0 14 * * *", function () {
+const flirtingSchedule2 = schedule.scheduleJob({ hour: 14, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
-const flirtingSchedule3 = schedule.scheduleJob("0 0 18 * * *", function () {
+// const flirtingSchedule3 = schedule.scheduleJob("0 0 18 * * *", function () {
+//   sendFlirting(chatIds)
+// })
+const flirtingSchedule3 = schedule.scheduleJob({ hour: 18, minute: 5, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
