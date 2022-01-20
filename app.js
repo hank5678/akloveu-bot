@@ -57,7 +57,7 @@ bot.onText(/抱抱~/, function (msg) {
 // })
 
 bot.onText(/(.+)/, function (msg, match) {
-  console.log(msg)
+  console.log(msg.from.username + ": " + msg.text)
 })
 
 // bot.on("sticker", (msg) => {
