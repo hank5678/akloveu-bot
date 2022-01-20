@@ -66,7 +66,7 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "機器人罷工，沒有抱抱，要抱去找本人要"
+      payload: "走開~ 我不想抱抱啦~ 你去找主人抱抱，他在想你"
     }
   ],
   [
@@ -97,6 +97,16 @@ module.exports = [
     {
       type: "text",
       payload: "親親~ 抱抱~ 摸摸~~~~~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "小寶貝抱抱~ 你真好"
     },
     {
       type: "sticker",
