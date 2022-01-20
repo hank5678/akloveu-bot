@@ -4,6 +4,14 @@ var flirting = require("./flirting")
 var love = require("./love")
 var morning = require("./morning")
 var night = require("./night")
+const express = require("express")
+
+const app = express()
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
+
 var token = "5062531955:AAFdH1eN0m-xGiLy1IFc30dnRTNO60H6jnU"
 //括號裡面的內容需要改為在第5步獲得的Token
 var bot = new TelegramBot(token, { polling: true })
