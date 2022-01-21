@@ -2,6 +2,7 @@ var TelegramBot = require("node-telegram-bot-api")
 var schedule = require("node-schedule")
 var flirting = require("./flirting")
 var love = require("./love")
+var love = require("./love")
 var morning = require("./morning")
 var night = require("./night")
 const express = require("express")
@@ -13,11 +14,12 @@ app.listen(port, () => {
 })
 
 var token = "5062531955:AAFdH1eN0m-xGiLy1IFc30dnRTNO60H6jnU"
+// var token = "5026027683:AAGsSpHsUATaee2ld6vda5kNixNg_tDE6FQ"
 //括號裡面的內容需要改為在第5步獲得的Token
 var bot = new TelegramBot(token, { polling: true })
 //使用Long Polling的方式與Telegram伺服器建立連線
 
-const chatIds = [456371558, 591309041] // 456371558
+const chatIds = [591309041] // 456371558
 
 //收到Start訊息時會觸發這段程式
 // bot.onText(/\/start/, function (msg) {
@@ -60,9 +62,9 @@ bot.onText(/(.+)/, function (msg, match) {
   console.log(msg.from.username + ": " + msg.text)
 })
 
-// bot.on("sticker", (msg) => {
-//   console.log(msg)
-// })
+bot.on("sticker", (msg) => {
+  console.log(msg)
+})
 
 const morningSchedule = schedule.scheduleJob({ hour: 9, minute: 30, tz: "Asia/Taipei" }, function () {
   sendMorning(chatIds)
