@@ -19,7 +19,7 @@ var token = "5062531955:AAFdH1eN0m-xGiLy1IFc30dnRTNO60H6jnU"
 var bot = new TelegramBot(token, { polling: true })
 //使用Long Polling的方式與Telegram伺服器建立連線
 
-const chatIds = [591309041] // 456371558
+const chatIds = [456371558, 591309041]
 
 //收到Start訊息時會觸發這段程式
 // bot.onText(/\/start/, function (msg) {
