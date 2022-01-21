@@ -98,7 +98,7 @@ schedule.scheduleJob({ hour: 16, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
-schedule.scheduleJob({ hour: 18, minute: 0, tz: "Asia/Taipei" }, function () {
+schedule.scheduleJob({ hour: 18, minute: 15, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
