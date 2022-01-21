@@ -13,8 +13,8 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-var token = "5062531955:AAFdH1eN0m-xGiLy1IFc30dnRTNO60H6jnU"
-// var token = "5026027683:AAGsSpHsUATaee2ld6vda5kNixNg_tDE6FQ"
+// var token = "5062531955:AAFdH1eN0m-xGiLy1IFc30dnRTNO60H6jnU"
+var token = "5026027683:AAGsSpHsUATaee2ld6vda5kNixNg_tDE6FQ"
 //括號裡面的內容需要改為在第5步獲得的Token
 var bot = new TelegramBot(token, { polling: true })
 //使用Long Polling的方式與Telegram伺服器建立連線
@@ -70,11 +70,11 @@ const morningSchedule = schedule.scheduleJob({ hour: 9, minute: 30, tz: "Asia/Ta
   sendMorning(chatIds)
 })
 
-const lunchSchedule = schedule.scheduleJob({ hour: 11, minute: 50, tz: "Asia/Taipei" }, function () {
+const lunchSchedule = schedule.scheduleJob({ hour: 11, minute: 45, tz: "Asia/Taipei" }, function () {
   sendLunch(chatIds)
 })
 
-const dinnerSchedule = schedule.scheduleJob({ hour: 19, minute: 0, tz: "Asia/Taipei" }, function () {
+const dinnerSchedule = schedule.scheduleJob({ hour: 18, minute: 45, tz: "Asia/Taipei" }, function () {
   sendDinner(chatIds)
 })
 
@@ -82,19 +82,31 @@ const nightSchedule = schedule.scheduleJob({ hour: 23, minute: 50, tz: "Asia/Tai
   sendNight(chatIds)
 })
 
-const flirtingSchedule1 = schedule.scheduleJob({ hour: 11, minute: 0, tz: "Asia/Taipei" }, function () {
+schedule.scheduleJob({ hour: 10, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
-const flirtingSchedule2 = schedule.scheduleJob({ hour: 14, minute: 0, tz: "Asia/Taipei" }, function () {
+schedule.scheduleJob({ hour: 12, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
-const flirtingSchedule3 = schedule.scheduleJob({ hour: 18, minute: 30, tz: "Asia/Taipei" }, function () {
+schedule.scheduleJob({ hour: 14, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
-const flirtingSchedule4 = schedule.scheduleJob({ hour: 22, minute: 0, tz: "Asia/Taipei" }, function () {
+schedule.scheduleJob({ hour: 16, minute: 0, tz: "Asia/Taipei" }, function () {
+  sendFlirting(chatIds)
+})
+
+schedule.scheduleJob({ hour: 18, minute: 0, tz: "Asia/Taipei" }, function () {
+  sendFlirting(chatIds)
+})
+
+schedule.scheduleJob({ hour: 20, minute: 0, tz: "Asia/Taipei" }, function () {
+  sendFlirting(chatIds)
+})
+
+schedule.scheduleJob({ hour: 22, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
