@@ -13,8 +13,8 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-// var token = "5062531955:AAFdH1eN0m-xGiLy1IFc30dnRTNO60H6jnU"
-var token = "5026027683:AAGsSpHsUATaee2ld6vda5kNixNg_tDE6FQ"
+var token = "5062531955:AAFdH1eN0m-xGiLy1IFc30dnRTNO60H6jnU"
+// var token = "5026027683:AAGsSpHsUATaee2ld6vda5kNixNg_tDE6FQ"
 //括號裡面的內容需要改為在第5步獲得的Token
 var bot = new TelegramBot(token, { polling: true })
 //使用Long Polling的方式與Telegram伺服器建立連線
