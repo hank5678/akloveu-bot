@@ -28,7 +28,7 @@ const chatIds = [456371558] // 591309041
 //   bot.sendMessage(chatId, resp) //發送訊息的function
 // })
 
-bot.onText(/抱抱~/, function (msg) {
+bot.onText(/抱抱[~～]/, function (msg) {
   var chatId = msg.chat.id //用戶的ID
   const a = love[Math.floor(Math.random() * love.length)]
   a.forEach((el, id) => {
