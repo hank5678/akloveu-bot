@@ -80,5 +80,29 @@ module.exports = [
       type: "sticker",
       payload: getRandomElement(stickers["早安"])
     }
+  ],
+  [
+    {
+      type: "text",
+      payload: "早安，寶貝，如果我們沒有聯繫，打個卡讓我知道你起床了，我會放心的"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["早安"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "新的一天，早安，寶貝"
+    },
+    {
+      type: "text",
+      payload: "希望今天可以是有你的一天"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["早安"])
+    }
   ]
 ]

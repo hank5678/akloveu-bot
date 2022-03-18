@@ -18,45 +18,11 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "你要好好的喔"
-    },
-    {
-      type: "text",
-      payload: "抱抱~ 寶貝"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["抱抱"])
-    }
-  ],
-  [
-    {
-      type: "text",
       payload: "我希望你在我身邊"
     },
     {
       type: "text",
       payload: "寶貝，抱抱"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["抱抱"])
-    }
-  ],
-  [
-    {
-      type: "text",
-      payload: "寶貝要乖乖喔~ 抱抱~"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["抱抱"])
-    }
-  ],
-  [
-    {
-      type: "text",
-      payload: "超用力~~ 大~~~ 抱抱~~~~"
     },
     {
       type: "sticker",
@@ -83,20 +49,6 @@ module.exports = [
     {
       type: "text",
       payload: "抱抱，我很想你，你也要想我哦"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["抱抱"])
-    }
-  ],
-  [
-    {
-      type: "text",
-      payload: "寶貝，抱完乖乖哦~"
-    },
-    {
-      type: "text",
-      payload: "抱抱，我想你"
     },
     {
       type: "sticker",
@@ -161,6 +113,232 @@ module.exports = [
     {
       type: "text",
       payload: "其實我都很想你"
+    },
+    {
+      type: "text",
+      payload: "抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "寶貝，謝謝你，沒有忘記我"
+    },
+    {
+      type: "text",
+      payload: "一些遺憾與擔憂在我心裡，"
+    },
+    {
+      type: "text",
+      payload: "我希望你幸福，我還希望是我，有一天.."
+    },
+    {
+      type: "text",
+      payload: "我愛你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "你是我心中最美的嚮往"
+    },
+    {
+      type: "text",
+      payload: "我好想你，抱一下吧"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "不知道對你來說，我是什麼"
+    },
+    {
+      type: "text",
+      payload: "那對我來說，無論以前經歷了什麼，以後還會經歷什麼"
+    },
+    {
+      type: "text",
+      payload: "妳依然像初見面認識一樣，令我朝思暮想著"
+    },
+    {
+      type: "text",
+      payload: "我好想你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "你並不壞，對自己好並沒有錯，相反，你是最好的。我希望你好"
+    },
+    {
+      type: "text",
+      payload: "寶貝，愛你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "寶貝，我希望你幸福，但是你自己太幸福，我卻會傷心"
+    },
+    {
+      type: "text",
+      payload: "所以你要幸福，但不必讓我知道，好嗎？"
+    },
+    {
+      type: "text",
+      payload: "抱抱，我非常想你"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "嗯.. 我希望你直接來找我抱抱好嗎？"
+    },
+    {
+      type: "text",
+      payload: "不是密我，是出現在我面前，讓我感受你"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我在的，我愛你，也想你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "牙~~~ 連續大抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "抱抱~~ 揉屁屁~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "抱+親~ 寶貝，我想念你可愛的笑顏與抱抱滿足的樣子"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "你在哪裡，過得好嗎？告訴我好嗎？"
+    },
+    {
+      type: "text",
+      payload: "我很想你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "遇見你，我才知道愛人是什麼"
+    },
+    {
+      type: "text",
+      payload: "即使我仍然學不會好好愛人，對不起"
+    },
+    {
+      type: "text",
+      payload: "謝謝你，我愛你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我很想你，不要忘記我"
     },
     {
       type: "text",

@@ -486,5 +486,117 @@ module.exports = [
       type: "sticker",
       payload: getRandomElement(stickers["撩妹"])
     }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我可以跟你要個東西嗎"
+    },
+    {
+      type: "text",
+      payload: "要你只屬於我"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "請注意你的嘴"
+    },
+    {
+      type: "text",
+      payload: "因為我隨時會親它"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "請注意你的嘴"
+    },
+    {
+      type: "text",
+      payload: "因為我隨時會親它"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "妳是兔子吧"
+    },
+    {
+      type: "text",
+      payload: "不然怎麼一直在我心蹦蹦跳"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "你猜我想喝什麼"
+    },
+    {
+      type: "text",
+      payload: "我想呵護妳"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "妳知道妳和星星有什麼區別嗎"
+    },
+    {
+      type: "text",
+      payload: "星星在天上而妳在我的心裡"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "妳知道妳和猴子有什麼區別嗎"
+    },
+    {
+      type: "text",
+      payload: "猴子在山洞，而妳住在我的心"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "妳知道妳和猴子有什麼區別嗎"
+    },
+    {
+      type: "text",
+      payload: "猴子在山洞，而妳住在我的心"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
   ]
 ]

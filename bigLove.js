@@ -48,6 +48,26 @@ module.exports = [
   [
     {
       type: "text",
+      payload: "大抱抱~~~~ 摸摸~~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "超級大抱抱~ 不給你呼吸~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
       payload: "走開~ 沒有大抱抱~ 你去找主人，他想你了"
     }
   ],
@@ -55,6 +75,26 @@ module.exports = [
     {
       type: "text",
       payload: "大抱抱~ 抱起來摔到床上~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "大抱抱~ 抱起來摔到床上~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我想你了，大抱抱~"
     },
     {
       type: "sticker",

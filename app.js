@@ -5,6 +5,7 @@ var love = require("./love")
 var bigLove = require("./bigLove")
 var morning = require("./morning")
 var night = require("./night")
+var getWeatherReportAsync = require("./getWeatherReportAsync")
 const express = require("express")
 
 const app = express()
@@ -13,13 +14,13 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-var token = "5231899144:AAFiLdn3dA54HXUOiGsoI36jx6WO0I1ZGYI"
-// var token = "5026027683:AAGsSpHsUATaee2ld6vda5kNixNg_tDE6FQ"
+// var token = "5231899144:AAFiLdn3dA54HXUOiGsoI36jx6WO0I1ZGYI"
+var token = "5026027683:AAGsSpHsUATaee2ld6vda5kNixNg_tDE6FQ" // 測試
 //括號裡面的內容需要改為在第5步獲得的Token
 var bot = new TelegramBot(token, { polling: true })
 //使用Long Polling的方式與Telegram伺服器建立連線
 
-const chatIds = [456371558] // 456371558 591309041
+const chatIds = [591309041, 456371558] // 456371558 591309041
 
 //收到Start訊息時會觸發這段程式
 // bot.onText(/\/start/, function (msg) {
@@ -82,9 +83,9 @@ bot.onText(/(.+)/, function (msg, match) {
   console.log(msg.from.username + ": " + msg.text)
 })
 
-bot.on("sticker", (msg) => {
-  console.log(msg)
-})
+// bot.on("sticker", (msg) => {
+//   console.log(msg)
+// })
 
 const morningSchedule = schedule.scheduleJob({ hour: 9, minute: 30, tz: "Asia/Taipei" }, function () {
   sendMorning(chatIds)
@@ -102,15 +103,11 @@ const nightSchedule = schedule.scheduleJob({ hour: 23, minute: 50, tz: "Asia/Tai
   sendNight(chatIds)
 })
 
-schedule.scheduleJob({ hour: 10, minute: 0, tz: "Asia/Taipei" }, function () {
+schedule.scheduleJob({ hour: 10, minute: 30, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
-schedule.scheduleJob({ hour: 12, minute: 0, tz: "Asia/Taipei" }, function () {
-  sendFlirting(chatIds)
-})
-
-schedule.scheduleJob({ hour: 14, minute: 0, tz: "Asia/Taipei" }, function () {
+schedule.scheduleJob({ hour: 13, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
@@ -118,16 +115,8 @@ schedule.scheduleJob({ hour: 16, minute: 0, tz: "Asia/Taipei" }, function () {
   sendFlirting(chatIds)
 })
 
-schedule.scheduleJob({ hour: 18, minute: 15, tz: "Asia/Taipei" }, function () {
-  sendFlirting(chatIds)
-})
-
 schedule.scheduleJob({ hour: 20, minute: 0, tz: "Asia/Taipei" }, function () {
-  sendFlirting(chatIds)
-})
-
-schedule.scheduleJob({ hour: 22, minute: 0, tz: "Asia/Taipei" }, function () {
-  sendFlirting(chatIds)
+  sendLove(chatIds)
 })
 
 const sendLunch = (chatIds) => {
@@ -142,6 +131,23 @@ const sendDinner = (chatIds) => {
   chatIds.forEach((chatId) => {
     a.forEach((el, id) => {
       bot.sendMessage(chatId, "晚餐時間囉，好好吃飯，我想你，要好好的喔")
+    })
+  })
+}
+
+const sendLove = (chatIds) => {
+  const a = bigLove[Math.floor(Math.random() * bigLove.length)]
+
+  chatIds.forEach((chatId) => {
+    a.forEach((el, id) => {
+      setTimeout(() => {
+        if (el.type === "text") {
+          bot.sendMessage(chatId, el.payload)
+        }
+        if (el.type === "sticker") {
+          bot.sendSticker(chatId, el.payload)
+        }
+      }, 3000 * id)
     })
   })
 }
@@ -165,16 +171,21 @@ const sendMorning = (chatIds) => {
 const sendNight = (chatIds) => {
   const a = night[Math.floor(Math.random() * night.length)]
   chatIds.forEach((chatId) => {
-    a.forEach((el, id) => {
-      setTimeout(() => {
-        if (el.type === "text") {
-          bot.sendMessage(chatId, el.payload)
-        }
-        if (el.type === "sticker") {
-          bot.sendSticker(chatId, el.payload)
-        }
-      }, 3000 * id)
+    getWeatherReportAsync().then((report) => {
+      bot.sendMessage(chatId, report)
     })
+    setTimeout(() => {
+      a.forEach((el, id) => {
+        setTimeout(() => {
+          if (el.type === "text") {
+            bot.sendMessage(chatId, el.payload)
+          }
+          if (el.type === "sticker") {
+            bot.sendSticker(chatId, el.payload)
+          }
+        }, 3000 * (id + 1))
+      })
+    }, 3000)
   })
 }
 
@@ -197,19 +208,17 @@ const sendFlirting = (chatIds) => {
 // sendFlirting(chatIds)
 // setIntervel(() => {
 bot.sendMessage(591309041, "開機~")
-// sendFlirting(chatIds)
-// bot.sendSticker(591309041, "CAACAgUAAxkBAAMuYeeMZNun0MX52PdqqfC72jVj1N4AAgYCAALfH3IZbjLpvcc2eq0jBA")
-// }, 10000)
 
-// const a = flirting[Math.floor(Math.random() * flirting.length)]
-// a.forEach((el, id) => {
-//   setTimeout(() => {
-//     console.log(el)
-//     if (el.type === "text") {
-//       bot.sendMessage(591309041, el.payload)
-//     }
-//     if (el.type === "sticker") {
-//       bot.sendSticker(591309041, el.payload)
-//     }
-//   }, 3000 * id)
+// bot.onText(/\w/, function (msg) {
+//   // var chatId = msg.chat.id //用戶的ID
+//   // var resp = "你好" //括號裡面的為回應內容，可以隨意更改
+//   // bot.sendMessage(chatId, resp) //發送訊息的function
+//   // console.log(msg.chat.id)
+//   // console.log(msg.text)
+
+//   bot.sendMessage(msg.chat.id, `${msg.chat.id}:${msg.text}`)
 // })
+
+bot.onText(/(.+)/, function (msg, match) {
+  bot.sendMessage(591309041, `[${msg.chat.id}]: ${msg.text}`)
+})
