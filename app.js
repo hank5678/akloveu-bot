@@ -31,7 +31,7 @@ const chatIds = [591309041, 456371558] // 456371558 591309041
 
 bot.onText(/指令[~～]/, function (msg) {
   var chatId = msg.chat.id //用戶的ID
-  bot.sendMessage(chatId, "目前指令：「抱抱~」「大抱抱~」")
+  bot.sendMessage(chatId, "目前指令：「抱抱~」「大抱抱~」「剪刀石頭布~」")
 })
 
 bot.onText(/^抱抱[~～]$/, function (msg) {
@@ -205,6 +205,53 @@ const sendFlirting = (chatIds) => {
   })
 }
 
+const values = ["剪刀", "石頭", "布"]
+
+bot.onText(/^剪刀石頭布[~～]/, function (msg) {
+  var chatId = msg.chat.id //用戶的ID
+  const reg = /剪刀石頭布[~～](?<value>.*)/
+  const value = reg.exec(msg.text)?.groups?.value
+
+  const vv = values.indexOf(value)
+  setTimeout(() => {
+    if (vv === -1) {
+      bot.sendMessage(chatId, "ㄜ.. 我聽不懂你在說什麼，你只能喊我才能懂喔 剪刀石頭布~[你想出的拳]，舉例：剪刀石頭布~剪刀")
+    } else {
+      const my = Math.floor(Math.random() * 3)
+
+      if (my === 0 && vv === 0) {
+        bot.sendMessage(chatId, "我出剪刀！平手，有種再來一把")
+      }
+      if (my === 1 && vv === 0) {
+        bot.sendMessage(chatId, "我出石頭！我贏囉～我可沒作弊哦")
+      }
+      if (my === 2 && vv === 0) {
+        bot.sendMessage(chatId, "我出布！好吧.. 這把算你贏了，口亨")
+      }
+
+      if (my === 0 && vv === 1) {
+        bot.sendMessage(chatId, "我出剪刀！我輸了，嗚嗚")
+      }
+      if (my === 1 && vv === 1) {
+        bot.sendMessage(chatId, "我出石頭！平手了～口亨，再來啊")
+      }
+      if (my === 2 && vv === 1) {
+        bot.sendMessage(chatId, "我出布！我贏了，哈哈哈，你太弱啦")
+      }
+
+      if (my === 0 && vv === 2) {
+        bot.sendMessage(chatId, "我出剪刀！你輸囉，輸了脫一件拍照上傳～")
+      }
+      if (my === 1 && vv === 2) {
+        bot.sendMessage(chatId, "我出石頭！好啦你贏了啦，你是不是晚出啊")
+      }
+      if (my === 2 && vv === 2) {
+        bot.sendMessage(chatId, "我出布！看來我今天遇到對手啦，居然跟我平分秋色")
+      }
+    }
+  }, 1000)
+})
+
 // sendFlirting(chatIds)
 // setIntervel(() => {
 bot.sendMessage(591309041, "開機~")
@@ -221,4 +268,8 @@ bot.sendMessage(591309041, "開機~")
 
 bot.onText(/(.+)/, function (msg, match) {
   bot.sendMessage(591309041, `[${msg.chat.id}]: ${msg.text}`)
+})
+
+bot.onText(/^hanktest[~～]$/, function (msg) {
+  sendNight([591309041])
 })

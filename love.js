@@ -48,16 +48,6 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "抱抱，我很想你，你也要想我哦"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["抱抱"])
-    }
-  ],
-  [
-    {
-      type: "text",
       payload: "親親~ 抱抱~ 摸摸~~~~~"
     },
     {
@@ -343,6 +333,108 @@ module.exports = [
     {
       type: "text",
       payload: "抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我希望有一天，我每天都在你身邊"
+    },
+    {
+      type: "text",
+      payload: "這個機器人就不需要在工作了"
+    },
+    {
+      type: "text",
+      payload: "我想你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "寶貝，我真的很想你"
+    },
+    {
+      type: "text",
+      payload: "跟我本人說聲抱抱吧，好嗎？"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我很想你，不知道你在哪裡，在做什麼的時候"
+    },
+    {
+      type: "text",
+      payload: "你一定要幸福"
+    },
+    {
+      type: "text",
+      payload: "現在對我而言最幸福的事情"
+    },
+    {
+      type: "text",
+      payload: "是過去的片刻回憶，以及現在偶爾的交集"
+    },
+    {
+      type: "text",
+      payload: "謝謝妳一直在，我很想你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "抱抱，我想要一直抱抱～"
+    },
+    {
+      type: "text",
+      payload: "啊～我還要親親"
+    },
+    {
+      type: "text",
+      payload: "啵啵啵啵～"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "你想我了嗎？"
+    },
+    {
+      type: "text",
+      payload: "我也很想你，即使在最黑暗的時候，你不知道的時候"
+    },
+    {
+      type: "text",
+      payload: "最後令我恢復一些理智的是我們過去的回憶"
+    },
+    {
+      type: "text",
+      payload: "以及我還持有的一點點小夢想"
+    },
+    {
+      type: "text",
+      payload: "愛你，抱抱"
     },
     {
       type: "sticker",
