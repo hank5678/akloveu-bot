@@ -99,7 +99,7 @@ function getNightReport(records) {
   const tomorrowArr = [getTemperature(tomorrowMorningDay), getTemperature(tomorrowNightDay)].filter((el) => el !== undefined)
   const tomorrowTemp = tomorrowArr.reduce((acc, cur) => acc + cur, 0) / tomorrowArr.length
 
-  return `明天${getCI(tomorrowTemp)}，${getWearTalk(tomorrowTemp)}，啊~ 還有，早上的下雨機率是${getPoP(tomorrowMorningDay)}%，晚上是${getPoP(
+  return `明天天氣${getCI(tomorrowTemp)}～ ${getWearTalk(tomorrowTemp)}，啊~ 還有，早上的下雨機率是${getPoP(tomorrowMorningDay)}%，晚上是${getPoP(
     tomorrowNightDay
   )}%，要注意一下哦`
 }
