@@ -2,6 +2,7 @@ var TelegramBot = require("node-telegram-bot-api")
 var schedule = require("node-schedule")
 var flirting = require("./flirting")
 var love = require("./love")
+var kiss = require("./kiss")
 var bigLove = require("./bigLove")
 var morning = require("./morning")
 var night = require("./night")
@@ -49,6 +50,21 @@ bot.onText(/^抱抱[~～]$/, function (msg) {
   })
 })
 
+bot.onText(/^啵啵[~～]$/, function (msg) {
+  var chatId = msg.chat.id //用戶的ID
+  const a = kiss[Math.floor(Math.random() * kiss.length)]
+  a.forEach((el, id) => {
+    setTimeout(() => {
+      if (el.type === "text") {
+        bot.sendMessage(chatId, el.payload)
+      }
+      if (el.type === "sticker") {
+        bot.sendSticker(chatId, el.payload)
+      }
+    }, 3000 * id)
+  })
+})
+
 bot.onText(/^大抱抱[~～]$/, function (msg) {
   var chatId = msg.chat.id //用戶的ID
   const a = bigLove[Math.floor(Math.random() * bigLove.length)]
@@ -83,9 +99,15 @@ bot.onText(/(.+)/, function (msg, match) {
   console.log(msg.from.username + ": " + msg.text)
 })
 
-// bot.on("sticker", (msg) => {
-//   console.log(msg)
-// })
+bot.on("sticker", (msg) => {
+  // console.log(msg)
+  if (msg.sticker.file_unique_id === "AgADTwQAAtf0yFU") {
+    bot.sendMessage(591309041, `[${msg.chat.id}]: 親愛的～ (貼圖`)
+    setTimeout(() => {
+      bot.sendSticker(msg.chat.id, "CAACAgUAAxkBAAIBF2JFexr2SqZpiV77VqMwMUqHnPO3AAI6BgACiYrJVdL54LzcV5tfIwQ")
+    }, 300)
+  }
+})
 
 const morningSchedule = schedule.scheduleJob({ hour: 9, minute: 30, tz: "Asia/Taipei" }, function () {
   sendMorning(chatIds)

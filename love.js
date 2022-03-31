@@ -440,5 +440,23 @@ module.exports = [
       type: "sticker",
       payload: getRandomElement(stickers["抱抱"])
     }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我愛你，不要離開我"
+    },
+    {
+      type: "text",
+      payload: "見面的時候，我會給你大力的擁抱"
+    },
+    {
+      type: "text",
+      payload: "抱抱~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
   ]
 ]
