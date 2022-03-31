@@ -32,7 +32,7 @@ const chatIds = [591309041, 456371558] // 456371558 591309041
 
 bot.onText(/指令[~～]/, function (msg) {
   var chatId = msg.chat.id //用戶的ID
-  bot.sendMessage(chatId, "目前指令：「抱抱~」「大抱抱~」「剪刀石頭布~」")
+  bot.sendMessage(chatId, "目前指令：「抱抱~」「啵啵~」「大抱抱~」「剪刀石頭布~」")
 })
 
 bot.onText(/^抱抱[~～]$/, function (msg) {
