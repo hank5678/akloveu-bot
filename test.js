@@ -22,32 +22,43 @@ const chatIds = [591309041, 456371558] // 456371558 591309041
 //   )
 // })
 
+// CAACAgUAAxkBAAIBRGJFhM5ydOA4Ya__S0CW71fwoFn3AAJPBAAC1_TIVVGIv1Qxf4zlIwQ
+
 chatIds.forEach((chatId) => {
   setTimeout(() => {
-    bot.sendMessage(chatId, "====== 重來，我耍笨了 ======")
+    bot.sendMessage(chatId, "====== 我有話要說啦 ======")
   }, 1000)
   setTimeout(() => {
-    bot.sendMessage(chatId, "嗚嗚～我剛剛有BUG啦，好險主人馬上發現，把我推進急診室搶救成功～我繽紛復活啦！")
+    bot.sendMessage(chatId, "主人說錯話了啦～")
   }, 2000)
   setTimeout(() => {
-    bot.sendMessage(chatId, "現在我又多一個新功能囉～ 跟你介紹一下呀")
+    bot.sendMessage(chatId, "看在我的面子上，原諒他啦～他很愛你唷")
   }, 3000)
   setTimeout(() => {
-    bot.sendMessage(chatId, "我變聰明了，我會玩剪刀石頭布~")
+    bot.sendMessage(chatId, "拜託拜託～ 不然我也沒有好日子過 嗚嗚")
   }, 4000)
   setTimeout(() => {
-    bot.sendMessage(chatId, "指令的格式是：剪刀石頭布~[你要出的拳]")
+    bot.sendMessage(chatId, "主人去死，我幫你揍他，那你原諒他～")
   }, 5000)
   setTimeout(() => {
-    bot.sendMessage(chatId, "舉例：剪刀石頭布~石頭")
+    bot.sendSticker(chatId, "CAACAgUAAxkBAAIBUWJP4-3A2IrFXILOCd_U29FV5RdtAAIqBAAC_8ZwVuBtgtIRXwABzSME")
   }, 6000)
-  setTimeout(() => {
-    bot.sendMessage(chatId, "遇事不決，需要二選一的時候，歡迎找我切磋商量～")
-  }, 7000)
-  setTimeout(() => {
-    bot.sendMessage(chatId, "我發誓不會作弊也不會晚出～ 君子之戰～")
-  }, 8000)
-  setTimeout(() => {
-    bot.sendMessage(chatId, "拜拜~ 今天要快快樂樂哦")
-  }, 9000)
+  // setTimeout(() => {
+  //   bot.sendSticker(chatId, "CAACAgUAAxkBAAIBUWJP4-3A2IrFXILOCd_U29FV5RdtAAIqBAAC_8ZwVuBtgtIRXwABzSME")
+  // }, 7000)
+  // setTimeout(() => {
+  //   bot.sendMessage(chatId, "我會回應你喲～")
+  // }, 8000)
+  // setTimeout(() => {
+  //   bot.sendMessage(chatId, "還有還有～我有多一點點貼圖囉～等待你慢慢發現")
+  // }, 9000)
+  // setTimeout(() => {
+  //   bot.sendMessage(chatId, "要常常抱抱親親我，不要理主人啦~ 我比他好~~ 嘿嘿嘿")
+  // }, 10000)
+  // setTimeout(() => {
+  //   bot.sendMessage(chatId, "怎麼樣，我聰明吧？哈哈哈~ 主人給我智力UP ⬆⬆⬆")
+  // }, 11000)
+  // setTimeout(() => {
+  //   bot.sendMessage(chatId, "拜拜~ 下次見")
+  // }, 12000)
 })

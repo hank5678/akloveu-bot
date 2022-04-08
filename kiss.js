@@ -118,5 +118,63 @@ module.exports = [
       type: "sticker",
       payload: getRandomElement(stickers["啵啵"])
     }
+  ],
+  [
+    {
+      type: "text",
+      payload: "喵啵啵~"
+    },
+    {
+      type: "sticker",
+      payload: "CAACAgUAAxkBAAIBSmJP4byyhHx0W4-dT1qjGkC0VUdbAAJ4BAACpar5V46bRI21N2p_IwQ"
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "想啵啵你全身，脫光，躺好～"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["啵啵"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "啵啵妳～舔舔耳朵～你喜歡"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["啵啵"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我最喜歡你了～啵啵"
+    },
+    {
+      type: "text",
+      payload: "不，不是，我的意思是說，我只喜歡你～"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["啵啵"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "好久沒有啵啵，想你了"
+    },
+    {
+      type: "text",
+      payload: "寶貝~啵啵啵啵啵啵啵啵啵啵啵啵啵啵"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["啵啵"])
+    }
   ]
 ]

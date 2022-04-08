@@ -277,6 +277,9 @@ bot.onText(/^剪刀石頭布[~～]/, function (msg) {
 // sendFlirting(chatIds)
 // setIntervel(() => {
 bot.sendMessage(591309041, "開機~")
+// bot.sendSticker(591309041, "CAACAgUAAxkBAAIBSmJP4byyhHx0W4-dT1qjGkC0VUdbAAJ4BAACpar5V46bRI21N2p_IwQ")
+// bot.sendSticker(591309041, "AgADeAQAAqWq-Vc")
+// bot.sendSticker(591309041, "AAMCBQADGQEAAgFKYk_hvLKEfHRbj51PWqMaQLRVR1sAAngEAAKlqvlXjptEjbU3an8BAAdtAAMjBA")
 
 // bot.onText(/\w/, function (msg) {
 //   // var chatId = msg.chat.id //用戶的ID
