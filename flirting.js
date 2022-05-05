@@ -172,20 +172,6 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "你知道為什麼我認識你以後心胸越來越窄嗎？"
-    },
-    {
-      type: "text",
-      payload: "因為我裝的全是你。"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["撩妹"])
-    }
-  ],
-  [
-    {
-      type: "text",
       payload: "你再怎麼完美，還是會有缺點。"
     },
     {
@@ -248,20 +234,6 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "你可以幫我做一件事嗎？"
-    },
-    {
-      type: "text",
-      payload: "我的終生大事。"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["撩妹"])
-    }
-  ],
-  [
-    {
-      type: "text",
       payload: "我考上的是第二志願，你知道我的第一志願是什麼嗎？"
     },
     {
@@ -300,16 +272,6 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "遇見你是命運的安排，但愛上你是我無法抗拒的情不自禁。"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["撩妹"])
-    }
-  ],
-  [
-    {
-      type: "text",
       payload: "其實今天有一點想你，其實不只一點，其實也不只今天。"
     },
     {
@@ -325,62 +287,6 @@ module.exports = [
     {
       type: "text",
       payload: "我喜歡抱你"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["撩妹"])
-    }
-  ],
-  [
-    {
-      type: "text",
-      payload: "我的幸運數字是10，你知道你的幸運數字是多少嗎？"
-    },
-    {
-      type: "text",
-      payload: "是89，因為89不離10~"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["撩妹"])
-    }
-  ],
-  [
-    {
-      type: "text",
-      payload: "有一句話說女人是水做的，但我覺得你不是水。"
-    },
-    {
-      type: "text",
-      payload: "妳是海水做的。"
-    },
-    {
-      type: "text",
-      payload: "因為妳顏值很高。"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["撩妹"])
-    }
-  ],
-  [
-    {
-      type: "text",
-      payload: "如果你是黑板，那我是什麼？"
-    },
-    {
-      type: "text",
-      payload: "值日生，因為每天要「擦」黑板。"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["撩妹"])
-    }
-  ],
-  [
-    {
-      type: "text",
-      payload: "你就像空氣一樣，每天都一定要吸。"
     },
     {
       type: "sticker",
@@ -484,20 +390,6 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "請注意你的嘴"
-    },
-    {
-      type: "text",
-      payload: "因為我隨時會親它"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["撩妹"])
-    }
-  ],
-  [
-    {
-      type: "text",
       payload: "妳是兔子吧"
     },
     {
@@ -540,11 +432,11 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "妳知道妳和猴子有什麼區別嗎"
+      payload: "妳知道什麼酒最容易醉嗎？"
     },
     {
       type: "text",
-      payload: "猴子在山洞，而妳住在我的心"
+      payload: "和妳的長長久久"
     },
     {
       type: "sticker",
@@ -554,11 +446,257 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "妳知道妳和猴子有什麼區別嗎"
+      payload: "沒有水的地方叫沙漠"
     },
     {
       type: "text",
-      payload: "猴子在山洞，而妳住在我的心"
+      payload: "沒有妳的地方叫寂寞"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "我覺得妳越來越過分了"
+    },
+    {
+      type: "text",
+      payload: "可愛得過分"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "yeeee~~~~~~~~"
+    },
+    {
+      type: "text",
+      payload: "我在ye妳~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "妳知道我和你玩什麼遊戲一定會輸嗎？"
+    },
+    {
+      type: "text",
+      payload: "捉迷藏"
+    },
+    {
+      type: "text",
+      payload: "因為喜歡一個人是藏不住的"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "人總是貪心的"
+    },
+    {
+      type: "text",
+      payload: "開始我也只是想和妳說說話"
+    },
+    {
+      type: "text",
+      payload: "最後卻想把妳佔為己有"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "你手借我一下，我幫你看一下手相"
+    },
+    {
+      type: "text",
+      payload: "看樣子，你命中缺我"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "妳就像法律，而我就是律師"
+    },
+    {
+      type: "text",
+      payload: "我想要鑽法律漏洞"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "你知道我和唐僧的區別嗎？"
+    },
+    {
+      type: "text",
+      payload: "唐僧取經，我娶妳"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "此情可待成追憶"
+    },
+    {
+      type: "text",
+      payload: "只是當時已惘然"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "思君如流水"
+    },
+    {
+      type: "text",
+      payload: "何有窮已時"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "海底月是天上月"
+    },
+    {
+      type: "text",
+      payload: "眼前人是心上人"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "既許一人以偏愛"
+    },
+    {
+      type: "text",
+      payload: "願盡餘生之慷慨"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "溫山軟水繁星萬千"
+    },
+    {
+      type: "text",
+      payload: "不及你眉眼半分"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "相思本是無憑語"
+    },
+    {
+      type: "text",
+      payload: "莫向花箋費淚行"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "盛年不重來"
+    },
+    {
+      type: "text",
+      payload: "一日難再晨"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "最是凝眸無限意"
+    },
+    {
+      type: "text",
+      payload: "似曾相逢在前生"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "三生有幸遇見你"
+    },
+    {
+      type: "text",
+      payload: "縱使無緣亦不悔"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["撩妹"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "無論歲月怎樣變遷"
+    },
+    {
+      type: "text",
+      payload: "我都會記得你當年讓我一眼動心的樣子"
     },
     {
       type: "sticker",
