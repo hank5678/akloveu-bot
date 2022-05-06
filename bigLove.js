@@ -138,5 +138,19 @@ module.exports = [
       type: "sticker",
       payload: getRandomElement(stickers["抱抱"])
     }
+  ],
+  [
+    {
+      type: "text",
+      payload: "大抱抱最舒服~"
+    },
+    {
+      type: "text",
+      payload: "抱～～～～～～"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
   ]
 ]

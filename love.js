@@ -478,5 +478,43 @@ module.exports = [
       type: "sticker",
       payload: getRandomElement(stickers["抱抱"])
     }
+  ],
+  [
+    {
+      type: "text",
+      payload: "即使少見妳了，即使再也不見你了，你還是一直在我心裡"
+    },
+    {
+      type: "text",
+      payload: "謝謝妳在的每一天，愛你，抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "寶貝，我很想你哦... 抱抱"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "寶貝，你在哪裡呢？過得好嗎？要抱抱嗎？"
+    },
+    {
+      type: "text",
+      payload: "我希望你是開心的，希望我自己也是，抱抱~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["抱抱"])
+    }
   ]
 ]

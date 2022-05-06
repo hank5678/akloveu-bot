@@ -76,20 +76,6 @@ module.exports = [
   [
     {
       type: "text",
-      payload: "啵啵~ 要開心哦，我在的，寶貝"
-    },
-    {
-      type: "text",
-      payload: "啵啵+抱抱~"
-    },
-    {
-      type: "sticker",
-      payload: getRandomElement(stickers["啵啵"])
-    }
-  ],
-  [
-    {
-      type: "text",
       payload: "要親臉臉還是親嘴嘴？"
     },
     {
@@ -191,6 +177,16 @@ module.exports = [
     {
       type: "text",
       payload: "想你了，我要啵啵～"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["啵啵"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "寶貝 啵一個～ 過來"
     },
     {
       type: "sticker",

@@ -162,5 +162,41 @@ module.exports = [
       type: "sticker",
       payload: getRandomElement(stickers["晚安"])
     }
+  ],
+  [
+    {
+      type: "text",
+      payload: "晚安，今天是好的一天嗎？"
+    },
+    {
+      type: "text",
+      payload: "明天也要開開心心哦"
+    },
+    {
+      type: "text",
+      payload: "寶貝晚安~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["晚安"])
+    }
+  ],
+  [
+    {
+      type: "text",
+      payload: "睡覺時間到囉~~~ 快去呼呼大睡~~"
+    },
+    {
+      type: "text",
+      payload: "不要熬夜，不要一直聊天玩手機了"
+    },
+    {
+      type: "text",
+      payload: "寶貝晚安唷~~"
+    },
+    {
+      type: "sticker",
+      payload: getRandomElement(stickers["晚安"])
+    }
   ]
 ]
